@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Button, Spacer } from '@chakra-ui/react'
 
 const ItemCount = () => {
 
@@ -14,7 +15,6 @@ const ItemCount = () => {
     }
 
     const subtrair = () =>{
-
         if (contador<0) {
             alert('Error')
         }else{
@@ -30,18 +30,23 @@ const ItemCount = () => {
     const agregar =()=>{
         setMensaje("Item agregado")
     }
-
-
     
 
   return (
     <div>
-        <h2>Imagen Producto 1</h2>
-        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <h3>{contador}</h3>
-        <button onClick={sumar}>+</button>
+        {/* <h2>Imagen Producto 1</h2>
+        <p>Descripción: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> */}
+        {/* <h3>{contador}</h3> */}
+
+        <Button colorScheme='teal' size='xs' onClick={sumar}>+</Button>
+        <Button colorScheme='teal' size='xs'>{contador}</Button>
+        <Button colorScheme='teal' size='xs'onClick={subtrair}>-</Button>
+        <Spacer/>
+        <Button colorScheme='teal' size='xs'onClick={agregar}>{mensaje}</Button>
+        
+        {/* <button onClick={sumar}>+</button>
         <button onClick={subtrair}>-</button>
-        <button onClick={agregar}>{mensaje}</button>
+        <button onClick={agregar}>{mensaje}</button> */}
     
     </div>
   )

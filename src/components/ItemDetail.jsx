@@ -1,7 +1,6 @@
 import React from 'react'
 import {Card, CardBody, Stack, Heading, Text, Divider, CardFooter, ButtonGroup } from '@chakra-ui/react'
 import ItemCount from './ItemCount'
-import ItemList from './ItemList'
 
 //PUEDE TENER IMAGEN, TITULO, DESCRPCION, PRECIO, ABAJO PONER CONTADOR
 //ESE COMPONENTE TIENE MAYOR DETALLE QUE EL COMPONENTE ITEM

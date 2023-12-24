@@ -34,13 +34,15 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-      <Flex wrap='nowrap' justify='center' bg='rgba(255, 255, 128, .5)' fontSize='3xl'>
 
-    <Box>
+    <Flex wrap='nowrap' justify='center' bg='rgba(255, 255, 128, .5)' fontSize='3xl'>
+
+      <Box>
+        <ItemDetail/>
+      </Box>
     
-      <ItemDetail/>
-    </Box>
-    
+
+
     </Flex>
     </div>
   )

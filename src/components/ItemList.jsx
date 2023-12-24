@@ -5,7 +5,8 @@ import ItemDetail from './ItemDetail'
 const ItemList = ({productos}) => {
     
   return (
-    <div>{
+    <div>
+      {
         productos.map((p)=>{
             return(
               <>
@@ -18,7 +19,8 @@ const ItemList = ({productos}) => {
               </>
             )
         })
-        }</div>
+        }
+        </div>
   )
 }
 
